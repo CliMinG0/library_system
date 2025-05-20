@@ -94,7 +94,7 @@ public class BorrowDAO {
 
             //이 쿼리의 결과 집합에서 필요한것은 borrows의 PK(id)의 값이다
             int borrowId = 0;
-            String checkSql "SELECT * FROM borrows " +
+            String checkSql = "SELECT * FROM borrows " +
                                 "WHERE book_id = ? " +
                                 "AND student_id  = ? " +
                                 "AND return_date IS NULL ";
